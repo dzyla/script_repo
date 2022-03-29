@@ -21,5 +21,4 @@ print('Saving to {}'.format(folder))
 while True:
 	filename = folder + datetime.datetime.now().strftime("%y%m%d_%H%M%S") + '.jpg'
 	os.system(
-		'libcamera-still --shutter {} --gain {} --awbgains 2.2,2.3 --immediate -o {}'.format(float(args.t) * 1000000,
-																								 args.g, filename))
+		'libcamera-still --shutter {} --gain {} --awbgains 2.2,2.3 --immediate -o {}'.format(float(args.t) * 1000000, args.g, filename))
