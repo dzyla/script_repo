@@ -8,7 +8,7 @@ scale = 0.4
 folder = '230722*.jpg'
 out_ext = 'gif'
 fps = 4
-files = sorted(glob.glob(folder))[:6]
+files = sorted(glob.glob(folder))
 
 # Create a new list of files that includes the original sequence and its reverse
 # Exclude the last file in the reversed sequence to avoid repeating it
